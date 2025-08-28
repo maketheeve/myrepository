@@ -1,0 +1,90 @@
+
+        body{
+          font-family: 'Poppins', sans-serif !important;
+        }
+        .header {
+            transition: all 0.3s ease;
+        }
+       h1 {
+        font-size: 1.5rem;
+        font-weight: 900 !important;
+        font-family: 'Poppins', sans-serif !important;
+        color: rgb(89, 19, 155);
+       }
+        #Logo{
+            height: 60px;
+            width: 65px;
+            margin-right: 10px;
+        }
+        .header.scrolled {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .hamburger {
+            transition: all 0.3s ease;
+        }
+        .hamburger.active .line:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .hamburger.active .line:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active .line:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+        .event-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .review-item {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        .review-item.active {
+            opacity: 1;
+        }
+        .scroll-container {
+            scrollbar-width: none; 
+        }
+        .scroll-container::-webkit-scrollbar {
+            display: none; 
+        }
+
+/* Smooth animation for mobile gallery */
+@keyframes scroll-x {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-scroll {
+  animation: scroll-x 20s linear infinite;
+}
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+#gallery-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+#gallery-container img {
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  width: 80vw;       
+  max-width: 400px;  
+  border-radius: 12px;
+}
+.animate-scroll {
+  animation: scroll-x 25s linear infinite;
+}
+
+@keyframes scroll-x {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); } 
+}
+
+
+

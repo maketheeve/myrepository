@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make THe Eve </title>
+    <link rel="icon" type="image/png" href="images/4.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Sticky Header -->
+    <header class="header fixed w-full z-50 bg-white py-4 px-6 md:px-12">
+        <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <div class="left-4 flex items-center space-x-3 p-2">
+                <img id="Logo"  src="images/4.png" alt="Website Logo" class="logo">
+                <h1 class="brand" ><strong><b>Make The Eve<b></b></strong></h1>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#" class="text-gray-700 hover:text-purple-600 font-medium">Home</a>
+                <a href="#events" class="text-gray-700 hover:text-purple-600 font-medium">Upcoming Events</a>
+                <a href="#contact" class="text-gray-700 hover:text-purple-600 font-medium">Contact</a>
+                <!-- <a href="#reviews" class="text-gray-700 hover:text-purple-600 font-medium">Reviews</a>
+            --><a href="#stars" class="text-gray-700 hover:text-purple-600 font-medium">Brighting Stars</a> -->
+            </nav>
+
+            <!-- Login/Signup Button -->
+            <!-- <div class="hidden md:block">
+                <button class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-full font-medium hover:opacity-90 transition">
+                    Login/Signup
+                </button>
+            </div> -->
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="hamburger focus:outline-none">
+                    <div class="line w-6 h-0.5 bg-gray-700 my-1 transition"></div>
+                    <div class="line w-6 h-0.5 bg-gray-700 my-1 transition"></div>
+                    <div class="line w-6 h-0.5 bg-gray-700 my-1 transition"></div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-6 absolute left-0 right-0 top-16 shadow-lg">
+            <div class="flex flex-col space-y-4">
+                <a href="#home" class="text-gray-700 hover:text-purple-600 font-medium">Home</a>
+                <a href="#events" class="text-gray-700 hover:text-purple-600 font-medium">Upcoming Events</a>
+                <a href="#contact" class="text-gray-700 hover:text-purple-600 font-medium">Contact</a>
+                <a href="#stars" class="text-gray-700 hover:text-purple-600 font-medium">Brighting Stars</a>
+               
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 md:px-12 bg-gradient-to-br from-purple-50 to-pink-50">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                    Plan Moments, <span class="text-purple-600">Celebrate Life</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 max-w-lg">
+                    We create unforgettable moments with soulful music, hilarious stand-up, and events designed to entertain and inspire every audience                </p>
+                <button class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-full font-medium hover:opacity-90 transition text-lg">
+                    <a href="#events"> Explore Events</a>
+                </button>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="images/photo.jpeg" 
+                     alt="Happy people celebrating" 
+                     class="rounded-xl shadow-xl w-full max-w-md">
+            </div>
+        </div>
+    </section>
+
+
+	    <!-- Upcoming Events Section -->
+    <section id="events" class="py-16 px-6 md:px-12 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Upcoming Events</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                
+                <!-- Event Card 3 -->
+                <div class="event-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg">
+                    <img src="images/event1.jpg" 
+                         alt="Wedding event" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Kavi Sammelan</h3>
+                        <p class="text-gray-600 mb-1"><i class="far fa-calendar-alt mr-2"></i>20 SEP, 2025</p>
+                        <p class="text-gray-600 mb-4"><i class="fas fa-map-marker-alt mr-2"></i>Auditorium, IIIT Manipur</p>
+                        <button class="w-full bg-purple-500 text-white-900 py-2 rounded-lg font-medium hover:bg-purple-600 hover:text-white transition">
+                           <a href="explore.html">Explore Now</a> 
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Event Card 1 -->
+                <div class="event-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg">
+                    <img src="images/singing.png" 
+                         alt="Concert event" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Singing Concert</h3>
+                        <p class="text-gray-600 mb-1"><i class="far fa-calendar-alt mr-2"></i>5 OCT, 2025(Estimated)</p>
+                        <p class="text-gray-600 mb-4"><i class="fas fa-map-marker-alt mr-2"></i>Imphal, Manipur</p>
+                        <button class="w-full bg-purple-500 text-white-900 py-2 rounded-lg font-medium hover:bg-purple-600 hover:text-white transition">
+                           Upcoming
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Event Card 2 -->
+                <div class="event-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg">
+                    <img src="images/evebt22.jpeg" 
+                         alt="Corporate event" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Stand Up Show</h3>
+                        <p class="text-gray-600 mb-1"><i class="far fa-calendar-alt mr-2"></i>10 NOV, 2025(Estimated)</p>
+                        <p class="text-gray-600 mb-4"><i class="fas fa-map-marker-alt mr-2"></i>Shillong, Meghalaya</p>
+                        <button class="w-full bg-purple-500 text-white-900 py-2 rounded-lg font-medium hover:bg-purple-600 hover:text-white transition">
+                            Upcoming
+                        </button>
+                    </div>
+                </div>
+                
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+	    <!-- Customer Reviews Section -->
+
+<!-- 
+    <section id="reviews" class="py-16 px-6 md:px-12 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+            
+            <div class="relative">
+              
+                <div class="overflow-hidden">
+                    <div id="reviews-container" class="flex transition-transform duration-500">
+                     
+                        <div class="review-item active min-w-full px-4 md:px-8">
+                            <div class="bg-white p-8 rounded-xl shadow-md text-center max-w-3xl mx-auto">
+                                <div class="flex justify-center mb-4 text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="text-lg italic mb-6">
+                                    "CelebrateLife transformed our wedding into a fairy tale! Their attention to detail and creative ideas made our day absolutely perfect. We couldn't have asked for a better team to work with."
+                                </p>
+                                <div class="flex items-center justify-center">
+                                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson" class="w-12 h-12 rounded-full mr-4 object-cover">
+                                    <div>
+                                        <h4 class="font-bold">Sarah Johnson</h4>
+                                        <p class="text-gray-600 text-sm">Wedding Client</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="review-item min-w-full px-4 md:px-8">
+                            <div class="bg-white p-8 rounded-xl shadow-md text-center max-w-3xl mx-auto">
+                                <div class="flex justify-center mb-4 text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="text-lg italic mb-6">
+                                    "The corporate retreat they organized for our company was flawless. Every activity was perfectly timed, the venue was stunning, and our team had an incredible bonding experience. Highly recommend!"
+                                </p>
+                                <div class="flex items-center justify-center">
+                                    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael Chen" class="w-12 h-12 rounded-full mr-4 object-cover">
+                                    <div>
+                                        <h4 class="font-bold">Michael Chen</h4>
+                                        <p class="text-gray-600 text-sm">Corporate Client</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="review-item min-w-full px-4 md:px-8">
+                            <div class="bg-white p-8 rounded-xl shadow-md text-center max-w-3xl mx-auto">
+                                <div class="flex justify-center mb-4 text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="text-lg italic mb-6">
+                                    "My daughter's sweet sixteen was magical thanks to CelebrateLife. They captured her personality perfectly in every detail. The decorations, entertainment, and food were all beyond our expectations."
+                                </p>
+                                <div class="flex items-center justify-center">
+                                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Lisa Rodriguez" class="w-12 h-12 rounded-full mr-4 object-cover">
+                                    <div>
+                                        <h4 class="font-bold">Lisa Rodriguez</h4>
+                                        <p class="text-gray-600 text-sm">Birthday Party Client</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 -->
+
+
+                <!-- Carousel Controls -->
+
+<!--                 
+                <button id="prev-review" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-purple-100 transition">
+                    <i class="fas fa-chevron-left text-purple-600"></i>
+                </button>
+                <button id="next-review" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-purple-100 transition">
+                    <i class="fas fa-chevron-right text-purple-600"></i>
+                </button> -->
+                
+                <!-- Indicators -->
+
+
+                <!-- <div class="flex justify-center mt-8 space-x-2">
+                    <button class="review-indicator w-3 h-3 rounded-full bg-purple-300 hover:bg-purple-600 transition active" data-index="0"></button>
+                    <button class="review-indicator w-3 h-3 rounded-full bg-purple-300 hover:bg-purple-600 transition" data-index="1"></button>
+                    <button class="review-indicator w-3 h-3 rounded-full bg-purple-300 hover:bg-purple-600 transition" data-index="2"></button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+	
+    <!-- Brighting Stars Section -->
+    <section id="stars" class="py-16 px-6 md:px-12 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Brighting Stars</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Star 1 -->
+                <div class="text-center">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-purple-200">
+                        <img src="images/ravi.jpeg" 
+                             alt="Alex Morgan" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-lg">Ravi Gupta</h3>
+                    <p class="text-gray-600">Singer</p>
+                </div>
+                
+                <!-- Star 2 -->
+                <div class="text-center">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-purple-200">
+                        <img src="images/dhruv.jpeg" 
+                             alt="Jessica Lee" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-lg">Dhruv Tandon</h3>
+                    <p class="text-gray-600">Comedian</p>
+                </div>
+                
+                <!-- Star 3 -->
+                <div class="text-center">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-purple-200">
+                        <img src="images/aman.jpeg" 
+                             alt="Aman Sharma" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-lg">Aman  Sharma</h3>
+                    <p class="text-gray-600">Comedian</p>
+                </div>
+                
+                <!-- Star 4 -->
+                <div class="text-center">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-purple-200">
+                        <img src="images/shivam.jpeg" 
+                             alt="Maria Garcia" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-lg">Shivam Kumar</h3>
+                    <p class="text-gray-600">Comedian</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Our team of passionate professionals has worked with many events and countless families to create unforgettable experiences. We bring creativity, expertise, and dedication to every event.
+                </p>
+            </div>
+        </div>
+    </section>
+
+        <!-- Gallery Section -->
+    <section id="gallery" class="py-16 px-6 md:px-12 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Event Gallery</h2>
+
+            <!-- Desktop Grid -->
+            <div class="hidden md:grid grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="images/img1.jpeg" 
+                         alt="Event 1" class="w-full h-64 object-cover transform hover:scale-110 transition duration-700">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="images/img3.jpeg" 
+                         alt="Event 1" class="w-full h-64 object-cover transform hover:scale-110 transition duration-700">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="images/img2.jpeg" 
+                         alt="Event 1" class="w-full h-64 object-cover transform hover:scale-110 transition duration-700">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="images/img6.jpeg" 
+                         alt="Event 1" class="w-full h-64 object-cover transform hover:scale-110 transition duration-700">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="images/img8.jpeg" 
+                         alt="Event 1" class="w-full h-64 object-cover transform hover:scale-110 transition duration-700">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="images/img9.jpeg" 
+                         alt="Event 1" class="w-full h-64 object-cover transform hover:scale-110 transition duration-700">
+                </div>
+              
+            </div>
+
+            <!-- Mobile Carousel -->
+<div class="md:hidden relative overflow-hidden">
+  <div class="flex animate-scroll space-x-4 w-max">
+    <!-- First Set -->
+    <img src="images/img1.jpeg" class="w-72 h-48 object-cover rounded-xl shadow-md" alt="Event 2">
+    <img src="images/img3.jpeg" class="w-72 h-48 object-cover rounded-xl shadow-md" alt="Event 1">
+    <img src="images/img2.jpeg" class="w-72 h-48 object-cover rounded-xl shadow-md" alt="Event 1">
+    <img src="images/img6.jpeg" class="w-72 h-48 object-cover rounded-xl shadow-md" alt="Event 1">
+    <img src="images/img8.jpeg" class="w-72 h-48 object-cover rounded-xl shadow-md" alt="Event 1">
+    <img src="images/img9.jpeg" class="w-72 h-48 object-cover rounded-xl shadow-md" alt="Event 1">
+    <img src="images/img10.jpeg" class="w-72 h-48 object-cover rounded-xl shadow-md" alt="Event 1">
+       
+
+    <!-- Duplicate Set for seamless loop -->
+    <img src="images/img1.jpeg" class="w-72 h-48 object-cover rounded-xl shadow-md" alt="Event 2">
+    <img src="images/img3.jpeg" class="w-72 h-48 object-cover rounded-xl shadow-md" alt="Event 1">
+    <img src="images/img2.jpeg" class="w-72 h-48 object-cover rounded-xl shadow-md" alt="Event 1">
+    <img src="images/img6.jpeg" class="w-72 h-48 object-cover rounded-xl shadow-md" alt="Event 1">
+    <img src="images/img8.jpeg" class="w-72 h-48 object-cover rounded-xl shadow-md" alt="Event 1">
+    <img src="images/img9.jpeg" class="w-72 h-48 object-cover rounded-xl shadow-md" alt="Event 1">
+    <img src="images/img10.jpeg" class="w-72 h-48 object-cover rounded-xl shadow-md" alt="Event 1">
+    </div>
+</div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 md:px-12 bg-gradient-to-br from-purple-50 to-pink-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        <!-- <div>
+                            <label for="event-type" class="block text-gray-700 font-medium mb-2">Event Type</label>
+                            <select id="event-type" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                                <option value="">Select an option</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="corporate">Corporate Event</option>
+                                <option value="birthday">Birthday Party</option>
+                                <option value="conference">Conference</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div> -->
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-white p-8 rounded-xl shadow-md h-full">
+                        <h3 class="text-xl font-bold mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Our Office</h4>
+                                    <p class="text-gray-600">Imphal<br>Manipur,INDIA - 795002</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Phone</h4>
+                                    <p class="text-gray-600"><a href="tel:+918090912647" style="color:#0ea5e9; text-decoration:none;">+91‑8090912647</a><br>Mon-Fri, 9am-6pm </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Email</h4>
+                                    <p class="text-gray-600" ><a href="mailto:maketheeve@gmail.com" style="color:#0ea5e9; text-decoration:none;">maketheeve@gmail.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a target="_blank" href="https://www.instagram.com/maketheeve?utm_source=ig_web_button_share_sheet&igsh=MWVtdmdwa2J4ZmUyYg==" class="bg-gray-100 p-3 rounded-full text-purple-600 hover:bg-purple-100 transition">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a target="_blank" href="https://www.youtube.com/channel/UCF9ROQNpQ4kDUMCl76se-9A" class="bg-gray-100 p-3 rounded-full text-purple-600 hover:bg-purple-100 transition">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                                <!-- <a href="#" class="bg-gray-100 p-3 rounded-full text-purple-600 hover:bg-purple-100 transition">
+                                    <i class="fab fa-twitter"></i> -->
+                                </a>
+                                <a target="_blank" href="https://www.linkedin.com/company/maketheeve/posts/?feedView=all" class="bg-gray-100 p-3 rounded-full text-purple-600 hover:bg-purple-100 transition">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <!-- <a href="#" class="bg-gray-100 p-3 rounded-full text-purple-600 hover:bg-purple-100 transition">
+                                    <i class="fab fa-pinterest-p"></i> -->
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	    <!-- Footer -->
+   <footer class="bg-gray-900 text-white py-12 px-6 md:px-12">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">Make The Eve</h3>
+                <p class="text-gray-400">
+                    Making your special moments unforgettable.
+                </p>
+            </div>
+            
+            <div>
+                <h4 class="font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#events" class="text-gray-400 hover:text-white transition">Upcoming Events</a></li>
+                    <li><a href="#stars" class="text-gray-400 hover:text-white transition">Brighting Stars</a></li>
+                    <li><a href="#reviews" class="text-gray-400 hover:text-white transition">Reviews</a></li>
+                    <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="font-bold mb-4">Legal</h4>
+                <ul class="space-y-2">
+                    <li><a href="privacy_Policy.html" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                    <li><a href="contact_us.html" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+                    <li><a href="refund_policy.html" class="text-gray-400 hover:text-white transition">Cancellation & Refund</a></li>
+                    <li><a href="term&condition.html" class="text-gray-400 hover:text-white transition">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+            <p>&copy; 2025 Make The Eve. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+	 <script src="script2.js"></script> 
+</body>
+</html>
+
+
