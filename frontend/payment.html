@@ -365,7 +365,7 @@
   let RAZORPAY_KEY_ID = "";
 
   // Fetch public key from backend
-  fetch("http://localhost:5000/get-razorpay-key")
+  fetch("https://maketheeve.com/get-razorpay-key")
     .then(res => res.json())
     .then(data => {
       RAZORPAY_KEY_ID = data.key;
@@ -395,7 +395,7 @@
             
             try {
                 // 1️⃣ Create order
-                const orderRes = await fetch("http://localhost:5000/create-order", {
+                const orderRes = await fetch("http://maketheeve.com/create-order", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ name, email, mobile, address, gender })
@@ -424,7 +424,7 @@
                         payBtn.innerHTML = 'Verifying Payment...';
                         
                         // 3️⃣ Verify payment
-                        const verifyRes = await fetch("http://localhost:5000/verify-payment", {
+                        const verifyRes = await fetch("http://maketheeve.com/verify-payment", {
                             method: "POST",
                             headers: { "Content-Type": "application/json" },
                             body: JSON.stringify({ response, bookingData })
